@@ -8,7 +8,7 @@ var screen_size
 func _ready():
 	screen_size=get_viewport_rect().size
 	connect("body_entered",self,"_on_Body_entered")
-	
+	pass
 
 func _process(delta):
 	
