@@ -5,3 +5,6 @@
 bin/
 build/
 lib/
+
+# idk wtf im doing
+.mono/
