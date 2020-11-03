@@ -13,6 +13,9 @@ func game_over():
 	$ScoreTimer.stop()
 	$MobTimer.stop()
 	$HUD.show_gameover()
+	get_tree().call_group("mobs","queue_free")
+	$BGM.stop()
+	$DeathSound.play()
 	pass
 
 func new_game():
@@ -21,6 +24,7 @@ func new_game():
 	$StartTimer.start()
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")
+	$BGM.play()
 	pass
 
 
