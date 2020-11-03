@@ -12,6 +12,7 @@ func _ready():
 	if mob_index == 0:
 		$CollisionShape2D.scale.x = $CollisionShape2D.scale.x * 0.8
 		$CollisionShape2D.scale.y = $CollisionShape2D.scale.y * 0.8
+		
 	$VisibilityNotifier2D.connect("screen_exited",self,"_on_Visibility2D_Screen_exited")
 
 func _on_Visibility2D_Screen_exited():
