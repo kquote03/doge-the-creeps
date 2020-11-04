@@ -4,6 +4,7 @@ extends Node
 #export (PackedScene) to allow us to choose the Mob scene we want to instance.
 export (PackedScene) var Enemy
 var score
+var is_touch:bool
 
 func _ready():
 	randomize()
@@ -25,6 +26,9 @@ func new_game():
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")
 	$BGM.play()
+	if $"HUD/Touch?".pressed == true:
+		
+		pass
 	pass
 
 
